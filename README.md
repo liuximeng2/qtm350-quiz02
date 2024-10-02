@@ -48,7 +48,7 @@ gapminder_df.to_csv('gapminder.csv', index=False)
 
 4. Modify the `_quarto.yml` file to include navigation links to your pages and direct the output to the `docs` folder.
 
-5. Modify the `index.qmd` file to include a title, a one-line description of the Gapminder dataset, and links to the
+5. Modify the `index.qmd` file to include a title, a one-line description of the Gapminder dataset, and links to the other website pages.
 
 6. Create a page entitled `life-gdp.qmd` analysing the relationship between life expectancy and GDP per capita. Give it a title, a brief introduction, and a graph. Show your code. Also give it a link in the index page with the text "Life Expectancy and GDP per Capita".
 
