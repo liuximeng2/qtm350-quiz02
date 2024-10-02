@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "QTM350 QUIZ 2"
@@ -17,6 +18,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
-output-dir: docs
 
