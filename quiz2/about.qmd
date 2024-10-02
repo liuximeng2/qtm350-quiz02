@@ -1,0 +1,10 @@
+---
+title: "About"
+---
+
+This is a webpage about the 
+
+- [United State Analysis](country.qmd) provides visulization of changes in life expectancy, GDP per capita, and population for the United States over time.
+- [Life Expectancy and GDP per Capita](country.qmd) provides relationship between world wide Life Expectancy and GDP per Capita
+- [Life Expectancy and Populaiton](life-populaiton.qmd) provides relationship between world wide Life Expectancy and Population
+

@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "life-population.html",
+    "href": "life-population.html",
+    "title": "Life-Population",
+    "section": "",
+    "text": "Life expectancy is a key demographic indicator that measures the average number of years a person is expected to live, based on current mortality rates. It is closely linked to the overall health, quality of life, and access to healthcare in a population. As life expectancy increases, populations tend to grow older, leading to shifts in age distributions and increased demand for resources related to elderly care.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# Load data\ndf = pd.read_csv('gapminder.csv')\n\n# Scatter plot\nplt.scatter(df['life_expectancy'], df['population_millions'], alpha=0.5)\n\n# Fit a linear regression model using numpy\nm, b = np.polyfit(df['life_expectancy'], df['population_millions'], 1)\n\n# Plot the regression line\nplt.plot(df['life_expectancy'], m*df['life_expectancy'] + b, color='red')\n\n# Add labels and title\nplt.title('Life Expectancy vs Population (in millions) with Regression Line')\nplt.xlabel('Life Expectancy (years)')\nplt.ylabel('Population (millions)')\n\nplt.show()\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\nThe Figure 1 demonstrates a moderate posite correlation between life expectanct and population."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quiz2",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "country.html",
+    "href": "country.html",
+    "title": "Country Analysis",
+    "section": "",
+    "text": "The page gives visulization of changes in life expectancy, GDP per capita, and population for the United States over time.\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('gapminder.csv')\ndf = df[df['country'] == 'United States']\ntime = df['year']\n\nplt.plot(time, df['life_expectancy'])\nplt.title('Change in Life Expectancy in the US')\nplt.xlabel('Year')\nplt.ylabel('Life Expectancy')\nplt.show()\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\nplt.plot(time, df['population_millions'])\nplt.title('Change in Population in the US')\nplt.xlabel('Year')\nplt.ylabel('Population (million)')\nplt.show()\n\n\n\n\n\n\n\nFigure 2\n\n\n\n\n\n\nplt.plot(time, df['gdp_per_capita'])\nplt.title('Change in GDP per Capita in the US')\nplt.xlabel('Year')\nplt.ylabel('GDP per Capita')\nplt.show()\n\n\n\n\n\n\n\nFigure 3"
+  },
+  {
+    "objectID": "life-gdp.html",
+    "href": "life-gdp.html",
+    "title": "Life-GDP",
+    "section": "",
+    "text": "The relationship between life expectancy and GDP per capita has been a subject of interest in economic and public health research. Typically, countries with higher GDP per capita tend to have higher life expectancies, as wealthier countries can afford better healthcare, nutrition, and living conditions. In this analysis, we explore this relationship through a scatter plot using available data.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Load data\ndf = pd.read_csv('gapminder.csv')\n\n# Scatter plot\nplt.scatter(df['life_expectancy'], df['gdp_per_capita'], alpha=0.5)\n\n# Fit a linear regression model using numpy\nm, b = np.polyfit(df['life_expectancy'], df['gdp_per_capita'], 1)\n\n# Plot the regression line\nplt.plot(df['life_expectancy'], m*df['life_expectancy'] + b, color='red')\n\n# Add labels and title\nplt.title('Life Expectancy vs GDP per Capita with Regression Line')\nplt.xlabel('Life Expectancy')\nplt.ylabel('GDP per Capita')\n\nplt.show()\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\nThe Figure 1 demonstrates a moderate posite correlation between life expectanct and population."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a webpage about the\n\nUnited State Analysis provides visulization of changes in life expectancy, GDP per capita, and population for the United States over time.\nLife Expectancy and GDP per Capita provides relationship between world wide Life Expectancy and GDP per Capita\nLife Expectancy and Populaiton provides relationship between world wide Life Expectancy and Population"
+  }
+]
